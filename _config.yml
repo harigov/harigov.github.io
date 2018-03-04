@@ -1,6 +1,7 @@
 theme: jekyll-theme-tactile
 permalink: /:year/:month/:day/:title.html
 highlighter: rouge
+url: "http://hari.ai"
 gems:
         - jekyll-jupyter-notebook
 
@@ -10,7 +11,7 @@ paginate: 4
 
 rtl: false
 owner:
-  name:           whitepaper
+  name:           Hari Govardhanam
   avatar:         "https://avatars1.githubusercontent.com/u/537678?s=240&v=4"
   email:          "hari<NOSPACEHERE>gov AT gmail.com"
   # Social networking links used in footer. Update and remove as you like.

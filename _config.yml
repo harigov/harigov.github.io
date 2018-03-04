@@ -9,6 +9,7 @@ plugins: ['jekyll-paginate', 'jekyll-gist', 'jekyll-feed']
 paginate: 4
 
 rtl: false
+logo: images/brain_ai.png
 owner:
   name:           Hari Govardhanam
   avatar:         "https://avatars1.githubusercontent.com/u/537678?s=240&v=4"

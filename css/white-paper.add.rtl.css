@@ -188,6 +188,20 @@ ul.nav li.logo a {
   Home Page
 ------------------------------------------------------------------------------*/
 
+.site-logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 150px;
+  align: center;
+}
+
+.site-logo-img {
+  width: 150px;
+  height: 150px;
+  align: center;
+}
+
 .listing {
   margin-top: 60px;
 }

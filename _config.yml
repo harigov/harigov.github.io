@@ -1,5 +1,19 @@
 theme: jekyll-theme-tactile
 permalink: /:year/:month/:day/:title.html
+highlighter: rouge
 gems:
         - jekyll-jupyter-notebook
 
+plugins: ['jekyll-paginate', 'jekyll-gist', 'jekyll-feed']
+
+paginate: 4
+
+rtl: false
+owner:
+  name:           whitepaper
+  avatar:         "https://avatars1.githubusercontent.com/u/537678?s=240&v=4"
+  email:          "hari<NOSPACEHERE>gov AT gmail.com"
+  # Social networking links used in footer. Update and remove as you like.
+  twitter: harigov
+  github: https://github.com/harigov
+  linkedin: https://www.linkedin.com/in/harigov

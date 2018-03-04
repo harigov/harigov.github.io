@@ -555,6 +555,11 @@ code.html span.doctype {
   color: #D7FF80;
 }
 
+.social-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
 
 .social-media-icons  {
   float: left;
@@ -562,6 +567,11 @@ code.html span.doctype {
   color: black;
 }
 
+.inspired-by {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 300;
+}
 
 .owner-name {
   margin-left: 0;

@@ -558,7 +558,7 @@ code.html span.doctype {
 .social-container {
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 27%;
 }
 
 .social-media-icons  {
@@ -567,7 +567,7 @@ code.html span.doctype {
   color: black;
 }
 
-.inspired-by {
+.inspired-by p {
   font-size: 12px;
   text-align: center;
   font-weight: 300;

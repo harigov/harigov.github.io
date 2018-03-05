@@ -567,6 +567,12 @@ code.html span.doctype {
   color: black;
 }
 
+.inspired-by {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 300;
+}
+
 .inspired-by p {
   font-size: 12px;
   text-align: center;

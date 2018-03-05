@@ -558,6 +558,7 @@ code.html span.doctype {
 .dark-container {
   background-color: #000;
   color: #fff;
+  padding: 50px 0;
 }
 
 .social-container {

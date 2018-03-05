@@ -555,28 +555,41 @@ code.html span.doctype {
   color: #D7FF80;
 }
 
+.dark-container {
+  background-color: #000;
+  color: #fff;
+}
+
 .social-container {
   margin-right: auto;
   margin-left: auto;
-  width: 27%;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
 }
 
 .social-media-icons  {
-  float: right;
   margin-left: 6px;
-  color: black;
+  color: #fff;
+  text-shadow: none;
 }
 
 .inspired-by {
   font-size: 12px;
   text-align: center;
   font-weight: 300;
+  background-color: #000;
+  color: #fff;
 }
 
 .inspired-by p {
   font-size: 12px;
   text-align: center;
   font-weight: 300;
+  background-color: #000;
+  color: #fff;
+  text-shadow: none;
 }
 
 .owner-name {

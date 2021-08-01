@@ -158,10 +158,10 @@
 </pre></div>
 
 
-<p><img src="https://hari.ai/images/reddit_da/submissions_per_month.png" width="100%">
-<img src="https://hari.ai/images/reddit_da/comments_per_month.png" width="100%">
-<img src="https://hari.ai/images/reddit_da/users_joined_per_month.png" width="100%">
-<img src="https://hari.ai/images/reddit_da/users_joined_per_day_demonetization.png" width="100%"></p>
+<p><img src="https://hari.ai/images/reddit_da/submissions_per_month.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/comments_per_month.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/users_joined_per_month.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/users_joined_per_day_demonetization.png" width="80%"></p>
 <h2>Distribution of User Activity across different days of the Week</h2>
 <p>I wanted to know if we are more active during any day of the week. There is minor variation but nothing notable. It truly seems like a daily pasttime of everyone in the subreddit.</p>
 <div class="highlight"><pre><span></span><span class="c1"># Weekly stats</span>
@@ -186,9 +186,9 @@
 </pre></div>
 
 
-<p><img src="https://hari.ai/images/reddit_da/avg_submissions_weekday.png" width="100%">
-<img src="https://hari.ai/images/reddit_da/avg_comments_weekday.png" width="100%">
-<img src="https://hari.ai/images/reddit_da/avg_users_joined_weekday.png" width="100%"></p>
+<p><img src="https://hari.ai/images/reddit_da/avg_submissions_weekday.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/avg_comments_weekday.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/avg_users_joined_weekday.png" width="80%"></p>
 <h2>Distribution of User Activity across different times of the Day</h2>
 <p>It looks like the first thing that people do after going to office is to access reddit. I guess one could use this information to gain traction when posting messages or submissions. Other than that, nothing unexpected here.</p>
 <div class="highlight"><pre><span></span><span class="c1"># Hourly stats</span>
@@ -213,9 +213,9 @@
 </pre></div>
 
 
-<p><img src="https://hari.ai/images/reddit_da/avg_submissions_time.png" width="100%">
-<img src="https://hari.ai/images/reddit_da/avg_comments_time.png" width="100%">
-<img src="https://hari.ai/images/reddit_da/avg_users_joined_time.png" width="100%"></p>
+<p><img src="https://hari.ai/images/reddit_da/avg_submissions_time.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/avg_comments_time.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/avg_users_joined_time.png" width="80%"></p>
 <h2>User Submission and Comment Metrics</h2>
 <p>I was wondering if users who joined during a particular month are more or less likely to submit or comment. There are some spikes but I haven't had time to fully investigate.</p>
 <p>In a similar vein, I was wondering if users from certain month are voted high for some reason and there are some spikes. I think this maybe because of some highly active users who joined during that time. I will investigate it later.</p>
@@ -235,8 +235,8 @@
 </pre></div>
 
 
-<p><img src="https://hari.ai/images/reddit_da/avg_submissions_user_joining_date.png" width="100%">
-<img src="https://hari.ai/images/reddit_da/avg_user_comments_joining_date.png" width="100%"></p>
+<p><img src="https://hari.ai/images/reddit_da/avg_submissions_user_joining_date.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/avg_user_comments_joining_date.png" width="80%"></p>
 <div class="highlight"><pre><span></span><span class="c1"># Score of submissions by authors age</span>
 <span class="n">user_submission_scores</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
     <span class="s2">&quot;select date(user_since, &#39;start of month&#39;) as month, avg(score) from users join (select posted_by, sum(score) as score from submissions group by posted_by) on users.user_id==posted_by group by month&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
@@ -253,8 +253,8 @@
 </pre></div>
 
 
-<p><img src="https://hari.ai/images/reddit_da/avg_submission_score_user_age.png" width="100%">
-<img src="https://hari.ai/images/reddit_da/avg_comments_score_user_age.png" width="100%"></p>
+<p><img src="https://hari.ai/images/reddit_da/avg_submission_score_user_age.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/avg_comments_score_user_age.png" width="80%"></p>
 <h2>Most Active Users</h2>
 <p>These are the users who made either most submissions or most comments. Anyone who worries about AI taking away jobs has one more data point here. Instead of recruiting hundreds of people, we have bots doing quite a lot of grunt work. I am pretty sure all those humans currently recruited to post large number of messages against other political parties and companies will be next. You know who you are.</p>
 <div class="highlight"><pre><span></span><span class="c1"># Most frequent submission authors</span>
@@ -661,7 +661,7 @@
 </pre></div>
 
 
-<p><img src="https://hari.ai/images/reddit_da/wordcloud_submissions.png" width="100%"></p>
+<p><img src="https://hari.ai/images/reddit_da/wordcloud_submissions.png" width="80%"></p>
 <div class="highlight"><pre><span></span><span class="c1"># Submission text word cloud</span>
 <span class="n">submission_text</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">for</span> <span class="n">b64text</span> <span class="ow">in</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;select content from submissions&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">():</span>
@@ -679,7 +679,7 @@
 </pre></div>
 
 
-<p><img src="https://hari.ai/images/reddit_da/wordcloud_submission_content.png" width="100%"></p>
+<p><img src="https://hari.ai/images/reddit_da/wordcloud_submission_content.png" width="80%"></p>
 <div class="highlight"><pre><span></span><span class="c1"># Comments text word cloud</span>
 <span class="n">comment_text</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">for</span> <span class="n">b64text</span> <span class="ow">in</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;select content from comments where score &gt; 5&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">():</span>
@@ -697,7 +697,7 @@
 </pre></div>
 
 
-<p><img src="https://hari.ai/images/reddit_da/wordcloud_comment_content.png" width="100%"></p>
+<p><img src="https://hari.ai/images/reddit_da/wordcloud_comment_content.png" width="80%"></p>
 <h2>Code and Extras</h2>
 <p>Code for loading data into database is below.</p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">avro</span>

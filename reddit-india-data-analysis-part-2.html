@@ -9,14 +9,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
     <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet" />-->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="/theme/style.css" rel="stylesheet" />
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" /> -->
+    <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" />
+
+    <link href="https://hari.ai/theme/style.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://hari.ai/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hari Govardhanam Full Atom Feed" />
   </head>
   <body id="index" class="archive">
     <!--[if lt IE 7]>
@@ -31,12 +34,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="">Hari Govardhanam</a>
+          <a class="navbar-brand" href="https://hari.ai"><i class="fas fa-laptop-code fa-lg"></i> Hari Govardhanam</a>
         </div>
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="https://github.com/harigov"><i class="fa fa-github-square fa-lg"></i></a></li>
-            <li><a href="https://linkedin.com/in/harigov"><i class="fa fa-linkedin fa-lg"></i></a></li>
+            <li><a href="https://goodreads.com/harigov"><i class="fab fa-goodreads fa-2x"></i></a></li>
+            <li><a href="https://github.com/harigov"><i class="fab fa-github-square fa-2x"></i></a></li>
+            <li><a href="https://linkedin.com/in/harigov"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://hari.ai/feeds/all.atom.xml"><i class="fa fa-rss fa-2x"></i></a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -116,9 +121,9 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/political_submissions_month.png" width="80%">
-<img src="/images/reddit_da/political_submissions_month_incl_demo.png" width="80%">
-<img src="/images/reddit_da/political_submissions_april_2017.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/political_submissions_month.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/political_submissions_month_incl_demo.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/political_submissions_april_2017.png" width="80%"></p>
 <h2>Participation in Political Submissions during an average week</h2>
 <p>If the increase in participation is primarily due to paid accounts, we should see a dramatic increase in activity during weekdays compared to weekends. The idea is that a regular user will probably continue accessing reddit during weekends as well but not someone whose job is to be on reddit all day. We look at both political submissions and comments to see if we can find some signals. As you can see below, there is a slight increase in activity over the week but nothing over the top to conclude that there are paid accounts. Either these paid accounts are operated all through the week or there are no paid accounts. We don't know yet.</p>
 <div class="highlight"><pre><span></span><span class="c1"># Weekly stats</span>
@@ -152,8 +157,8 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/avg_political_submissions_weekday.png" width="80%">
-<img src="/images/reddit_da/avg_political_submission_comments_weekday.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/avg_political_submissions_weekday.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/avg_political_submission_comments_weekday.png" width="80%"></p>
 <h2>Hourly Participation in Political Submissions</h2>
 <p>If there was a constant stream of activity during the week, could we find some signal about paid activity if we look at hourly distribution? It turns out that the activity in political submissions seems to match regular non-political activity. And the hourly distribution doesn't give any additional insight into paid user activity. Just to double check, I tried to see if there was a difference in activity during weekday and weekend. Again, no luck.</p>
 <div class="highlight"><pre><span></span><span class="c1"># Hourly stats</span>
@@ -201,9 +206,9 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/avg_political_submissions_time_of_day.png" width="80%">
-<img src="/images/reddit_da/avg_political_submissions_time_of_day_weekday.png" width="80%">
-<img src="/images/reddit_da/avg_political_submission_comments_time_of_day.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/avg_political_submissions_time_of_day.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/avg_political_submissions_time_of_day_weekday.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/avg_political_submission_comments_time_of_day.png" width="80%"></p>
 <h2>Utterances of different political party names</h2>
 <p>The idea behind this political analysis is to see if there are indeed paid accounts and if so who is paying them. Therefore, we look at the utterance of different political party and leader names to see if there is an isolated upward trend. Unfortunately, both Congress and BJP are showing an upward trend. I think the utterance of these political parties sort of matches their appearance in media. I don't know what to make out of this information. If at all, I would rather not judge with this limited information so as to avoid bias. For some strange reason, APP/Kejriwal saw a significant spike in April followed by a dramatic slowdown. An increase in 400 political submissions per month that we saw in April can probably be attributable to whatever caused this significant upward trend for AAP/Kejriwal.</p>
 <div class="highlight"><pre><span></span><span class="n">comment_lengths</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -222,7 +227,7 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/comments_congress_monthly.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/comments_congress_monthly.png" width="80%"></p>
 <div class="highlight"><pre><span></span><span class="n">comment_lengths</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">    select month, count from (</span>
 <span class="s2">        select date(posted_at, &#39;start of month&#39;) as month, count(*) as count, </span>
@@ -238,7 +243,7 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/comments_bjp_monthly.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/comments_bjp_monthly.png" width="80%"></p>
 <div class="highlight"><pre><span></span><span class="n">comment_lengths</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">    select </span>
 <span class="s2">        month, count </span>
@@ -259,7 +264,7 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/comments_aap_monthly.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/comments_aap_monthly.png" width="80%"></p>
 <p>We looked at number of submissions and comments across different time periods but can we find some signal in the length of the comment? If at all there are paid accounts, what are they measured on? Could it be length of the comment? If so we should see quite a lot of long comments or comments over certain length. So let's see...</p>
 <div class="highlight"><pre><span></span><span class="n">comment_lengths</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">    select </span>
@@ -278,7 +283,7 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/histogram_length_comments.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/histogram_length_comments.png" width="80%"></p>
 <p>It turns out that other than a spike at length of comment between 10 and 15, nothing else stands out. Let's see what's the case with those specific comments of length between 10 and 15 by constructing a word cloud of those comments.</p>
 <div class="highlight"><pre><span></span><span class="c1"># Submission text word cloud</span>
 <span class="n">submission_text</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
@@ -301,7 +306,7 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/wordcloud_political_submission.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/wordcloud_political_submission.png" width="80%"></p>
 <p>Well, looks like most of those comments are 'removed', 'deleted', etc., unrelated to the discussion at hand. I guess, if paid accounts exist, they are definitely not paid by the length of their comments. It did match my intuition but its not a big deal to validate it.</p>
 <h2>Submission Authors and their Activity</h2>
 <p>Focusing on general user activity didn't lead to any information that makes it easy to identify paid accounts. Let's try focusing on authors who posted most submissions. We can look at authors based on their submissions or the score that they received. Below is the list of authors with highest political submissions and scores.</p>
@@ -485,7 +490,7 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/author_affinity.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/author_affinity.png" width="80%"></p>
 <p>Now, lets look at accounts which have a strong affinity to an author and made large number of comments. If an account made few comments and has strong affinity, we can consider that as a one-off account to respond. However, if an account has large number of submissions and still has strong affinity to an author, that's definitely a reason to be suspicious about. And we have quite a few such accounts. Some of these accounts are obviously secondary accounts. For ex., "RahulRamIO" and "NikhilRaoIO" are most probably secondary accounts. Is there an actual parent account that owns all these? We don't know yet. It needs much more investigation.</p>
 <div class="highlight"><pre><span></span><span class="c1"># Affinity of authors sorted by affinity score and total responses</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -2162,8 +2167,8 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/active_time_submissions.png" width="80%">
-<img src="/images/reddit_da/active_time_political_submissions.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/active_time_submissions.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/active_time_political_submissions.png" width="80%"></p>
 <p>It turns out that non-political posts are similarly active as political posts. Computing median of all posts and political posts shows that political posts actually are slightly less active compared to all posts. I guess political posts are probably occupying a lot more of my visual field whenever I browse r/india and that's probably not true with respect to everybody.</p>
 <p>Just for the sake of completeness, we were considering average time to respond as one of the signal but we don't know if paid accounts are following certain simple rules to respond to comments. If so, it should show up as a spike in response time histogram. So let's plot it and see...</p>
 <div class="highlight"><pre><span></span><span class="n">comment_diffs</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -2194,7 +2199,7 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/responses_within_specified_time.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/responses_within_specified_time.png" width="80%"></p>
 <p>It looks like there isn't that big a spike if you exclude bots. It slides down naturally as one would expect. Maybe if we look at time to respond for political posts vs non-political posts, we may get some clues...</p>
 <div class="highlight"><pre><span></span><span class="c1"># Response time to comments for political and all posts</span>
 <span class="n">comment_diffs</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -2261,8 +2266,8 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/num_responses_within_specified_time.png" width="80%">
-<img src="/images/reddit_da/num_responses_political_within_specified_time.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/num_responses_within_specified_time.png" width="80%">
+<img src="https://hari.ai/images/reddit_da/num_responses_political_within_specified_time.png" width="80%"></p>
 <p>No luck here either. It seems like political posts follow a similar response times as non-political posts. So far I don't have enough information to detect whether there are any paid accounts trying to influence the users to think certain way or not. My gut feeling says that there definitely are people with bad intentions but I haven't found a signal yet to differentiate them. I guess the search continues...</p>
 <h2>Fancy Wordclouds</h2>
 <p>If you thought that this analysis will complete without word clouds, you must be dreaming. Let's see what are the most common words in political submission titles and comments...</p>
@@ -2289,7 +2294,7 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/wordcloud_political_submission_title.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/wordcloud_political_submission_title.png" width="80%"></p>
 <div class="highlight"><pre><span></span><span class="c1"># Submission text word cloud</span>
 <span class="n">submission_text</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">for</span> <span class="n">b64text</span> <span class="ow">in</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
@@ -2310,7 +2315,7 @@
 </pre></div>
 
 
-<p><img src="/images/reddit_da/wordcloud_political_submission_content.png" width="80%"></p>
+<p><img src="https://hari.ai/images/reddit_da/wordcloud_political_submission_content.png" width="80%"></p>
 <h2>Code and Extras</h2>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">avro</span>
 <span class="kn">import</span> <span class="nn">base64</span>
@@ -2505,15 +2510,27 @@
 <!-- /.entry-content -->
       <footer class="post-info text-muted">
         <button type="button" class="btn btn-default">          
-          <a href="/category/exploration.html"><div class="fa fa-lg fa-folder-open"></div> Exploration</a>
+          <a href="https://hari.ai/category/exploration.html"><div class="fa fa-lg fa-folder-open"></div> Exploration</a>
         </button>
       </footer>
       <!-- /.post-info -->
+    <!-- Comment BEGIN -->
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'hari-ai';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- Comment END -->
     </section>
     </div>
     <footer class="footer">
       <div class="container">
-        <p class="footer-text">&copy; <a href="">Hari Govardhanam</a> powered by <a href="http://getpelican.com/">pelican</a> and <a href="http://nodotcom.org">nikhil</a></p>
+        <p class="footer-text">&copy; <a href="https://hari.ai">Hari Govardhanam</a> powered by <a href="http://getpelican.com/">pelican</a> and <a href="http://nodotcom.org">nikhil</a></p>
       </div>
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
